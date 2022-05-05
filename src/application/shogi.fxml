@@ -42,87 +42,87 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField editable="false" prefHeight="25.0" prefWidth="55.0" promptText="桂" GridPane.columnIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="81.0" promptText="香" GridPane.columnIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="34.0" promptText="玉" GridPane.columnIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="81.0" promptText="金" GridPane.columnIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="81.0" promptText="銀" GridPane.columnIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="桂" GridPane.columnIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="銀" GridPane.columnIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="金" GridPane.columnIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="飛" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="香" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="銀" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="桂" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="角" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="角" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="王" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="金" GridPane.columnIndex="3" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="桂" GridPane.columnIndex="7" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="香" GridPane.columnIndex="8" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="飛" GridPane.columnIndex="7" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="銀" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="金" GridPane.columnIndex="5" GridPane.rowIndex="8" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-            <TextField editable="false" prefHeight="25.0" prefWidth="46.0" promptText="香" />
+            <TextField fx:id="zeroSeven" editable="false" prefHeight="25.0" prefWidth="55.0" promptText="桂" GridPane.columnIndex="7" />
+            <TextField fx:id="zeroEight" editable="false" prefHeight="25.0" prefWidth="81.0" promptText="香" GridPane.columnIndex="8" />
+            <TextField fx:id="oneZero" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="1" />
+            <TextField fx:id="zerofour" editable="false" prefHeight="25.0" prefWidth="34.0" promptText="玉" GridPane.columnIndex="4" />
+            <TextField fx:id="zeroFive" editable="false" prefHeight="25.0" prefWidth="81.0" promptText="金" GridPane.columnIndex="5" />
+            <TextField fx:id="zeroSix" editable="false" prefHeight="25.0" prefWidth="81.0" promptText="銀" GridPane.columnIndex="6" />
+            <TextField fx:id="zeroOne" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="桂" GridPane.columnIndex="1" />
+            <TextField fx:id="zeroTwo" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="銀" GridPane.columnIndex="2" />
+            <TextField fx:id="zeroThree" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="金" GridPane.columnIndex="3" />
+            <TextField fx:id="twoZero" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.rowIndex="2" />
+            <TextField fx:id="threeZero" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="3" />
+            <TextField fx:id="fourZero" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="4" />
+            <TextField fx:id="fiveZero" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="5" />
+            <TextField fx:id="sixZero" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.rowIndex="6" />
+            <TextField fx:id="sevenZero" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.rowIndex="7" />
+            <TextField fx:id="oneOne" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="飛" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="eightZero" editable="false" prefHeight="25.0" prefWidth="46.0" text="香" GridPane.rowIndex="8" />
+            <TextField fx:id="oneFour" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="fourOne" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="threeThree" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="threeTwo" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="twoThree" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="oneThree" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="threeOne" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="twoTwo" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="oneTwo" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="twoOne" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="twoSix" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <TextField fx:id="threeFive" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <TextField fx:id="fourFour" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="fiveThree" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="sixTwo" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="sixOne" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="oneSix" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <TextField fx:id="twoFive" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <TextField fx:id="threeFour" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="fourThree" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="fiveTwo" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="fiveOne" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="oneFive" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <TextField fx:id="twoFour" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="fourTwo" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="fourSix" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="fiveFive" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="sixFour" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="sevenThree" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="eightTwo" editable="false" prefHeight="25.0" prefWidth="46.0" text="銀" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <TextField fx:id="eightOne" editable="false" prefHeight="25.0" prefWidth="46.0" text="桂" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="sevenTwo" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="sixThree" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="fiveFour" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="fourFive" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <TextField fx:id="threeSix" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <TextField fx:id="twoSeven" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <TextField fx:id="oneEight" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <TextField fx:id="oneSeven" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="角" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <TextField fx:id="sevenOne" editable="false" prefHeight="25.0" prefWidth="46.0" text="角" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="sevenFive" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="eightFour" editable="false" prefHeight="25.0" prefWidth="46.0" text="王" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <TextField fx:id="eightThree" editable="false" prefHeight="25.0" prefWidth="46.0" text="金" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <TextField fx:id="sevenFour" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="sixFIve" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="fiveSix" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="fourSeven" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <TextField fx:id="threeEight" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <TextField fx:id="twoEight" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="歩" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <TextField fx:id="threeSeven" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <TextField fx:id="eightSeven" editable="false" prefHeight="25.0" prefWidth="46.0" text="桂" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <TextField fx:id="eightEight" editable="false" prefHeight="25.0" prefWidth="46.0" text="香" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <TextField fx:id="sevenEight" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <TextField fx:id="sixEight" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <TextField fx:id="sevenSeven" editable="false" prefHeight="25.0" prefWidth="46.0" text="飛" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <TextField fx:id="eightSix" editable="false" prefHeight="25.0" prefWidth="46.0" text="銀" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <TextField fx:id="eightFive" editable="false" prefHeight="25.0" prefWidth="46.0" text="金" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <TextField fx:id="sevenSix" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <TextField fx:id="sixSeven" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <TextField fx:id="fiveEight" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <TextField fx:id="fourEight" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <TextField fx:id="fiveSeven" editable="false" prefHeight="25.0" prefWidth="46.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <TextField fx:id="sixSix" editable="false" prefHeight="25.0" prefWidth="46.0" text="歩" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="zeroZero" editable="false" prefHeight="25.0" prefWidth="46.0" promptText="香" />
          </children>
       </GridPane>
       <Label prefHeight="17.0" prefWidth="55.0" text="相手" />
