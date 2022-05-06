@@ -101,6 +101,7 @@ public class shogiController {
 	
 	
 	@FXML protected void handleClicked00(MouseEvent event) {
+		boardSearch();
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
 			piece=zeroZero.getText();
@@ -373,91 +374,91 @@ public class shogiController {
 	@FXML protected void handleClicked30(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeZero.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeZero.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked31(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeOne.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeOne.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked32(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeTwo.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeTwo.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked33(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeThree.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeThree.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked34(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeFour.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeFour.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked35(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeFive.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeFive.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked36(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeSix.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeSix.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked37(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeSeven.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeSeven.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked38(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=threeEight.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			threeEight.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked40(MouseEvent event) {
@@ -911,7 +912,523 @@ public class shogiController {
 		}
 	}
 	
-	int clickNum=-1; //クリック回数 (%2 = {0:掴む,1:置く})
+//===========================================================================================
+	/*盤面の状態を探索　0:駒無し　1：自分の駒あり　2：相手の駒あり*/
+	public void boardSearch() {
+		//初期化
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<9;j++) {
+				board[i][j]=0;
+			}
+		}
+		
+		if(!(zeroZero.getText().equals(""))){ board[0][0]=1; }
+		else{ if(!(zeroZero.getPromptText().equals(""))) { board[0][0]=2; } }
+		if(!(zeroOne.getText().equals(""))){ board[0][1]=1; }
+		else{ if(!(zeroOne.getPromptText().equals(""))) { board[0][1]=2; } }
+		if(!(zeroTwo.getText().equals(""))){ board[0][2]=1; }
+		else{ if(!(zeroTwo.getPromptText().equals(""))) { board[0][2]=2; } }
+		if(!(zeroThree.getText().equals(""))){ board[0][3]=1; }
+		else{ if(!(zeroThree.getPromptText().equals(""))) { board[0][3]=2; } }
+		if(!(zeroFour.getText().equals(""))){ board[0][4]=1; }
+		else{ if(!(zeroFour.getPromptText().equals(""))) { board[0][4]=2; } }
+		if(!(zeroFive.getText().equals(""))){ board[0][5]=1; }
+		else{ if(!(zeroFive.getPromptText().equals(""))) { board[0][5]=2; } }
+		if(!(zeroSix.getText().equals(""))){ board[0][6]=1; }
+		else{ if(!(zeroSix.getPromptText().equals(""))) { board[0][6]=2; } }
+		if(!(zeroSeven.getText().equals(""))){ board[0][7]=1; }
+		else{ if(!(zeroSeven.getPromptText().equals(""))) { board[0][7]=2; } }
+		if(!(zeroEight.getText().equals(""))){ board[0][8]=1; }
+		else{ if(!(zeroEight.getPromptText().equals(""))) { board[0][8]=2; } }
+		
+		if(!(oneZero.getText().equals(""))){ board[1][0]=1; }
+		else{ if(!(oneZero.getPromptText().equals(""))) { board[1][0]=2; } }
+		if(!(oneOne.getText().equals(""))){ board[1][1]=1; }
+		else{ if(!(oneOne.getPromptText().equals(""))) { board[1][1]=2; } }
+		if(!(oneTwo.getText().equals(""))){ board[1][2]=1; }
+		else{ if(!(oneTwo.getPromptText().equals(""))) { board[1][2]=2; } }
+		if(!(oneThree.getText().equals(""))){ board[1][3]=1; }
+		else{ if(!(oneThree.getPromptText().equals(""))) { board[1][3]=2; } }
+		if(!(oneFour.getText().equals(""))){ board[1][4]=1; }
+		else{ if(!(oneFour.getPromptText().equals(""))) { board[1][4]=2; } }
+		if(!(oneFive.getText().equals(""))){ board[1][5]=1; }
+		else{ if(!(oneFive.getPromptText().equals(""))) { board[1][5]=2; } }
+		if(!(oneSix.getText().equals(""))){ board[1][6]=1; }
+		else{ if(!(oneSix.getPromptText().equals(""))) { board[1][6]=2; } }
+		if(!(oneSeven.getText().equals(""))){ board[1][7]=1; }
+		else{ if(!(oneSeven.getPromptText().equals(""))) { board[1][7]=2; } }
+		if(!(oneEight.getText().equals(""))){ board[1][8]=1; }
+		else{ if(!(oneEight.getPromptText().equals(""))) { board[1][8]=2; } }
+		
+		if(!(twoZero.getText().equals(""))){ board[2][0]=1; }
+		else{ if(!(twoZero.getPromptText().equals(""))) { board[2][0]=2; } }
+		if(!(twoOne.getText().equals(""))){ board[2][1]=1; }
+		else{ if(!(twoOne.getPromptText().equals(""))) { board[2][1]=2; } }
+		if(!(twoTwo.getText().equals(""))){ board[2][2]=1; }
+		else{ if(!(twoTwo.getPromptText().equals(""))) { board[2][2]=2; } }
+		if(!(twoThree.getText().equals(""))){ board[2][3]=1; }
+		else{ if(!(twoThree.getPromptText().equals(""))) { board[2][3]=2; } }
+		if(!(twoFour.getText().equals(""))){ board[2][4]=1; }
+		else{ if(!(twoFour.getPromptText().equals(""))) { board[2][4]=2; } }
+		if(!(twoFive.getText().equals(""))){ board[2][5]=1; }
+		else{ if(!(twoFive.getPromptText().equals(""))) { board[2][5]=2; } }
+		if(!(twoSix.getText().equals(""))){ board[2][6]=1; }
+		else{ if(!(twoSix.getPromptText().equals(""))) { board[2][6]=2; } }
+		if(!(twoSeven.getText().equals(""))){ board[2][7]=1; }
+		else{ if(!(twoSeven.getPromptText().equals(""))) { board[2][7]=2; } }
+		if(!(twoEight.getText().equals(""))){ board[2][8]=1; }
+		else{ if(!(twoEight.getPromptText().equals(""))) { board[2][8]=2; } }
+		
+		if(!(threeZero.getText().equals(""))){ board[3][0]=1; }
+		else{ if(!(threeZero.getPromptText().equals(""))) { board[3][0]=2; } }
+		if(!(threeOne.getText().equals(""))){ board[3][1]=1; }
+		else{ if(!(threeOne.getPromptText().equals(""))) { board[3][1]=2; } }
+		if(!(threeTwo.getText().equals(""))){ board[3][2]=1; }
+		else{ if(!(threeTwo.getPromptText().equals(""))) { board[3][2]=2; } }
+		if(!(threeThree.getText().equals(""))){ board[3][3]=1; }
+		else{ if(!(threeThree.getPromptText().equals(""))) { board[3][3]=2; } }
+		if(!(threeFour.getText().equals(""))){ board[3][4]=1; }
+		else{ if(!(threeFour.getPromptText().equals(""))) { board[3][4]=2; } }
+		if(!(threeFive.getText().equals(""))){ board[3][5]=1; }
+		else{ if(!(threeFive.getPromptText().equals(""))) { board[3][5]=2; } }
+		if(!(threeSix.getText().equals(""))){ board[3][6]=1; }
+		else{ if(!(threeSix.getPromptText().equals(""))) { board[3][6]=2; } }
+		if(!(threeSeven.getText().equals(""))){ board[3][7]=1; }
+		else{ if(!(threeSeven.getPromptText().equals(""))) { board[3][7]=2; } }
+		if(!(threeEight.getText().equals(""))){ board[3][8]=1; }
+		else{ if(!(threeEight.getPromptText().equals(""))) { board[3][8]=2; } }
+		
+		if(!(fourZero.getText().equals(""))){ board[4][0]=1; }
+		else{ if(!(fourZero.getPromptText().equals(""))) { board[4][0]=2; } }
+		if(!(fourOne.getText().equals(""))){ board[4][1]=1; }
+		else{ if(!(fourOne.getPromptText().equals(""))) { board[4][1]=2; } }
+		if(!(fourTwo.getText().equals(""))){ board[4][2]=1; }
+		else{ if(!(fourTwo.getPromptText().equals(""))) { board[4][2]=2; } }
+		if(!(fourThree.getText().equals(""))){ board[4][3]=1; }
+		else{ if(!(fourThree.getPromptText().equals(""))) { board[4][3]=2; } }
+		if(!(fourFour.getText().equals(""))){ board[4][4]=1; }
+		else{ if(!(fourFour.getPromptText().equals(""))) { board[4][4]=2; } }
+		if(!(fourFive.getText().equals(""))){ board[4][5]=1; }
+		else{ if(!(fourFive.getPromptText().equals(""))) { board[4][5]=2; } }
+		if(!(fourSix.getText().equals(""))){ board[4][6]=1; }
+		else{ if(!(fourSix.getPromptText().equals(""))) { board[4][6]=2; } }
+		if(!(fourSeven.getText().equals(""))){ board[4][7]=1; }
+		else{ if(!(fourSeven.getPromptText().equals(""))) { board[4][7]=2; } }
+		if(!(fourEight.getText().equals(""))){ board[4][8]=1; }
+		else{ if(!(fourEight.getPromptText().equals(""))) { board[4][8]=2; } }
+		
+		if(!(fiveZero.getText().equals(""))){ board[5][0]=1; }
+		else{ if(!(fiveZero.getPromptText().equals(""))) { board[5][0]=2; } }
+		if(!(fiveOne.getText().equals(""))){ board[5][1]=1; }
+		else{ if(!(fiveOne.getPromptText().equals(""))) { board[5][1]=2; } }
+		if(!(fiveTwo.getText().equals(""))){ board[5][2]=1; }
+		else{ if(!(fiveTwo.getPromptText().equals(""))) { board[5][2]=2; } }
+		if(!(fiveThree.getText().equals(""))){ board[5][3]=1; }
+		else{ if(!(fiveThree.getPromptText().equals(""))) { board[5][3]=2; } }
+		if(!(fiveFour.getText().equals(""))){ board[5][4]=1; }
+		else{ if(!(fiveFour.getPromptText().equals(""))) { board[5][4]=2; } }
+		if(!(fiveFive.getText().equals(""))){ board[5][5]=1; }
+		else{ if(!(fiveFive.getPromptText().equals(""))) { board[5][5]=2; } }
+		if(!(fiveSix.getText().equals(""))){ board[5][6]=1; }
+		else{ if(!(fiveSix.getPromptText().equals(""))) { board[5][6]=2; } }
+		if(!(fiveSeven.getText().equals(""))){ board[5][7]=1; }
+		else{ if(!(fiveSeven.getPromptText().equals(""))) { board[5][7]=2; } }
+		if(!(fiveEight.getText().equals(""))){ board[5][8]=1; }
+		else{ if(!(fiveEight.getPromptText().equals(""))) { board[5][8]=2; } }
+		
+		if(!(sixZero.getText().equals(""))){ board[6][0]=1; }
+		else{ if(!(sixZero.getPromptText().equals(""))) { board[6][0]=2; } }
+		if(!(sixOne.getText().equals(""))){ board[6][1]=1; }
+		else{ if(!(sixOne.getPromptText().equals(""))) { board[6][1]=2; } }
+		if(!(sixTwo.getText().equals(""))){ board[6][2]=1; }
+		else{ if(!(sixTwo.getPromptText().equals(""))) { board[6][2]=2; } }
+		if(!(sixThree.getText().equals(""))){ board[6][3]=1; }
+		else{ if(!(sixThree.getPromptText().equals(""))) { board[6][3]=2; } }
+		if(!(sixFour.getText().equals(""))){ board[6][4]=1; }
+		else{ if(!(sixFour.getPromptText().equals(""))) { board[6][4]=2; } }
+		if(!(sixFive.getText().equals(""))){ board[6][5]=1; }
+		else{ if(!(sixFive.getPromptText().equals(""))) { board[6][5]=2; } }
+		if(!(sixSix.getText().equals(""))){ board[6][6]=1; }
+		else{ if(!(sixSix.getPromptText().equals(""))) { board[6][6]=2; } }
+		if(!(sixSeven.getText().equals(""))){ board[6][7]=1; }
+		else{ if(!(sixSeven.getPromptText().equals(""))) { board[6][7]=2; } }
+		if(!(sixEight.getText().equals(""))){ board[6][8]=1; }
+		else{ if(!(sixEight.getPromptText().equals(""))) { board[6][8]=2; } }
+		
+		if(!(sevenZero.getText().equals(""))){ board[7][0]=1; }
+		else{ if(!(sevenZero.getPromptText().equals(""))) { board[7][0]=2; } }
+		if(!(sevenOne.getText().equals(""))){ board[7][1]=1; }
+		else{ if(!(sevenOne.getPromptText().equals(""))) { board[7][1]=2; } }
+		if(!(sevenTwo.getText().equals(""))){ board[7][2]=1; }
+		else{ if(!(sevenTwo.getPromptText().equals(""))) { board[7][2]=2; } }
+		if(!(sevenThree.getText().equals(""))){ board[7][3]=1; }
+		else{ if(!(sevenThree.getPromptText().equals(""))) { board[7][3]=2; } }
+		if(!(sevenFour.getText().equals(""))){ board[7][4]=1; }
+		else{ if(!(sevenFour.getPromptText().equals(""))) { board[7][4]=2; } }
+		if(!(sevenFive.getText().equals(""))){ board[7][5]=1; }
+		else{ if(!(sevenFive.getPromptText().equals(""))) { board[7][5]=2; } }
+		if(!(sevenSix.getText().equals(""))){ board[7][6]=1; }
+		else{ if(!(sevenSix.getPromptText().equals(""))) { board[7][6]=2; } }
+		if(!(sevenSeven.getText().equals(""))){ board[7][7]=1; }
+		else{ if(!(sevenSeven.getPromptText().equals(""))) { board[7][7]=2; } }
+		if(!(sevenEight.getText().equals(""))){ board[7][8]=1; }
+		else{ if(!(sevenEight.getPromptText().equals(""))) { board[7][8]=2; } }
+		
+		if(!(eightZero.getText().equals(""))){ board[8][0]=1; }
+		else{ if(!(eightZero.getPromptText().equals(""))) { board[8][0]=2; } }
+		if(!(eightOne.getText().equals(""))){ board[8][1]=1; }
+		else{ if(!(eightOne.getPromptText().equals(""))) { board[8][1]=2; } }
+		if(!(eightTwo.getText().equals(""))){ board[8][2]=1; }
+		else{ if(!(eightTwo.getPromptText().equals(""))) { board[8][2]=2; } }
+		if(!(eightThree.getText().equals(""))){ board[8][3]=1; }
+		else{ if(!(eightThree.getPromptText().equals(""))) { board[8][3]=2; } }
+		if(!(eightFour.getText().equals(""))){ board[8][4]=1; }
+		else{ if(!(eightFour.getPromptText().equals(""))) { board[8][4]=2; } }
+		if(!(eightFive.getText().equals(""))){ board[8][5]=1; }
+		else{ if(!(eightFive.getPromptText().equals(""))) { board[8][5]=2; } }
+		if(!(eightSix.getText().equals(""))){ board[8][6]=1; }
+		else{ if(!(eightSix.getPromptText().equals(""))) { board[8][6]=2; } }
+		if(!(eightSeven.getText().equals(""))){ board[8][7]=1; }
+		else{ if(!(eightSeven.getPromptText().equals(""))) { board[8][7]=2; } }
+		if(!(eightEight.getText().equals(""))){ board[8][8]=1; }
+		else{ if(!(eightEight.getPromptText().equals(""))) { board[8][8]=2; } }
+		
+		
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<9;j++) {
+				System.out.print(board[i][j]);
+			}
+		}
+	}
+	
+//======================================================================================
+	/*駒を掴んだ時に置ける範囲を探索*/
+	public void canBePlaceSearch() {
+		int x=pick[0];
+		int y=pick[1];
+		//初期化
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<9;j++) {
+				canBePlace[i][j]=0;
+			}
+		}
+		
+		switch(piece) {
+		case "歩"://-------------------------------------------------------------------
+			if(x>0 && board[x-1][y]!=1) {//1つ上
+				canBePlace[x-1][y]=1;
+			}
+			break;
+		case "飛"://---------------------------------------------------------------
+			for(int i=x-1;i>=0;i--) {//上方向
+				if(board[i][y]==1) {
+					break;
+				}
+				canBePlace[i][y]=1;
+				if(board[i][y]==2) {
+					break;
+				}
+			}
+			for(int i=x+1;i<9;i++) {//下方向
+				if(board[i][y]==1) {
+					break;
+				}
+				canBePlace[i][y]=1;
+				if(board[i][y]==2) {
+					break;
+				}
+			}
+			for(int j=y-1;j>=0;j--) {//左方向
+				if(board[x][j]==1) {
+					break;
+				}
+				canBePlace[x][j]=1;
+				if(board[x][j]==2) {
+					break;
+				}
+			}
+			for(int j=y+1;j<9;j++) {//右方向
+				if(board[x][j]==1) {
+					break;
+				}
+				canBePlace[x][j]=1;
+				if(board[x][j]==2) {
+					break;
+				}
+			}
+			break;
+		case "角"://-----------------------------------------------------------------------
+			for(int i=x-1,j=y-1;i>=0 && j>=0;i--,j--) {//左上
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			for(int i=x-1,j=y+1;i>=0 && j<9;i--,j++) {//右上
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			for(int i=x+1,j=y-1;i<9 && j>=0;i++,j--) {//左下
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			for(int i=x+1,j=y+1;i<9 && j<9;i++,j++) {//右下
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			break;
+		case "香"://-------------------------------------------------------------------
+			for(int i=x-1;i>=0;i--) {//上方向
+				if(board[i][y]==1) {
+					break;
+				}
+				canBePlace[i][y]=1;
+				if(board[i][y]==2) {
+					break;
+				}
+			}
+			break;
+		case "桂"://------------------------------------------------------------------
+			if(x>1) {
+				if(y>0 && board[x-2][y-1]!=1) {//左上
+					canBePlace[x-2][y-1]=1;
+				}
+				if(y<8 && board[x-2][y+1]!=1) {//右上
+					canBePlace[x-2][y+1]=1;
+				}
+			}
+			break;
+		case "銀"://-------------------------------------------------------------------
+			if(x>0) {
+				if(y>0 && board[x-1][y-1]!=1) {//左上
+					canBePlace[x-1][y-1]=1;
+				}
+				if(board[x-1][y]!=1) {//上
+					canBePlace[x-1][y]=1;
+				}
+				if(y<8 && board[x-1][y+1]!=1) {//右上
+					canBePlace[x-1][y+1]=1;
+				}
+			}
+			if(x<8) {
+				if(y>0 && board[x+1][y-1]!=1) {//左下
+					canBePlace[x+1][y-1]=1;
+				}
+				if(y<8 && board[x+1][y+1]!=1) {//右下
+					canBePlace[x+1][y+1]=1;
+				}
+			}
+			break;
+		case "金"://--------------------------------------------------------------------
+		case "と":
+		case "成香":
+		case "成桂":
+		case "成銀":
+			if(x>0) {
+				if(y>0 && board[x-1][y-1]!=1) {//左上
+					canBePlace[x-1][y-1]=1;
+				}
+				if(board[x-1][y]!=1) {//上
+					canBePlace[x-1][y]=1;
+				}
+				if(y<8 && board[x-1][y+1]!=1) {//右上
+					canBePlace[x-1][y+1]=1;
+				}
+			}
+			if(y>0) {
+				if(board[x][y-1]!=1) {//左
+					canBePlace[x][y-1]=1;
+				}
+			}
+			if(y<8) {
+				if(board[x][y+1]!=1) {//右
+					canBePlace[x][y+1]=1;
+				}
+			}
+			if(x<8) {
+				if(board[x+1][y]!=1) {//下
+					canBePlace[x+1][y]=1;
+				}
+			}
+			break;
+		case "王"://------------------------------------------------------------------
+		case "玉":
+			if(x>0) {
+				if(y>0 && board[x-1][y-1]!=1) {//左上
+					canBePlace[x-1][y-1]=1;
+				}
+				if(board[x-1][y]!=1) {//上
+					canBePlace[x-1][y]=1;
+				}
+				if(y<8 && board[x-1][y+1]!=1) {//右上
+					canBePlace[x-1][y+1]=1;
+				}
+			}
+			if(y>0) {
+				if(board[x][y-1]!=1) {//左
+					canBePlace[x][y-1]=1;
+				}
+			}
+			if(y<8) {
+				if(board[x][y+1]!=1) {//右
+					canBePlace[x][y+1]=1;
+				}
+			}
+			if(x<8) {
+				if(y>0 && board[x+1][y-1]!=1) {//左下
+					canBePlace[x+1][y-1]=1;
+				}
+				if(board[x+1][y]!=1) {//下
+					canBePlace[x+1][y]=1;
+				}
+				if(y<8 && board[x+1][y+1]!=1) {//右下
+					canBePlace[x+1][y+1]=1;
+				}
+			}
+			break;
+		case "龍王"://--------------------------------------------------------------
+			for(int i=x-1;i>=0;i--) {//上方向
+				if(board[i][y]==1) {
+					break;
+				}
+				canBePlace[i][y]=1;
+				if(board[i][y]==2) {
+					break;
+				}
+			}
+			for(int i=x+1;i<9;i++) {//下方向
+				if(board[i][y]==1) {
+					break;
+				}
+				canBePlace[i][y]=1;
+				if(board[i][y]==2) {
+					break;
+				}
+			}
+			for(int j=y-1;j>=0;j--) {//左方向
+				if(board[x][j]==1) {
+					break;
+				}
+				canBePlace[x][j]=1;
+				if(board[x][j]==2) {
+					break;
+				}
+			}
+			for(int j=y+1;j<9;j++) {//右方向
+				if(board[x][j]==1) {
+					break;
+				}
+				canBePlace[x][j]=1;
+				if(board[x][j]==2) {
+					break;
+				}
+			}
+			if(x>0) {
+				if(y>0 && board[x-1][y-1]!=1) {//左上
+					canBePlace[x-1][y-1]=1;
+				}
+				if(y<8 && board[x-1][y+1]!=1) {//右上
+					canBePlace[x-1][y+1]=1;
+				}
+			}
+			if(x<8) {
+				if(y>0 && board[x+1][y-1]!=1) {//左下
+					canBePlace[x+1][y-1]=1;
+				}
+				if(y<8 && board[x+1][y+1]!=1) {//右下
+					canBePlace[x+1][y+1]=1;
+				}
+			}
+			break;
+		case "龍馬"://--------------------------------------------------------------
+			for(int i=x-1,j=y-1;i>=0 && j>=0;i--,j--) {//左上
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			for(int i=x-1,j=y+1;i>=0 && j<9;i--,j++) {//右上
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			for(int i=x+1,j=y-1;i<9 && j>=0;i++,j--) {//左下
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			for(int i=x+1,j=y+1;i<9 && j<9;i++,j++) {//右下
+				if(board[i][j]==1) {
+					break;
+				}
+				canBePlace[i][j]=1;
+				if(board[i][j]==2) {
+					break;
+				}
+			}
+			if(x>0) {
+				if(board[x-1][y]!=1) {//上
+					canBePlace[x-1][y]=1;
+				}
+			}
+			if(y>0) {
+				if(board[x][y-1]!=1) {//上
+					canBePlace[x][y-1]=1;
+				}
+			}
+			if(y<8) {
+				if(board[x][y+1]!=1) {//上
+					canBePlace[x][y+1]=1;
+				}
+			}
+			if(x<8) {
+				if(board[x+1][y]!=1) {//下
+					canBePlace[x+1][y]=1;
+				}
+			}
+			break;
+		default://--------------------------------------------------------------
+			break;
+		}
+	}
+	
+	
+//=============================================================================================	
+	int clickNum=0; //クリック回数 (%2 = {0:掴む,1:置く})
 	String piece=""; //掴んでいる駒
+	int[][] canBePlace=new int[9][9];  //[x][y] 置ける場所は1,置けない場所は0
+	int[] pick=new int[2];        //掴んだ駒があった場所[x,y]
+	int[] put=new int[2];         //置く場所[x,y]
+	
+	int[][] board=new int[9][9];  //盤面　駒がない：0  自駒：1  敵駒：2
 	
 }
