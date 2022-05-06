@@ -283,91 +283,91 @@ public class shogiController {
 	@FXML protected void handleClicked20(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoZero.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoZero.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked21(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoOne.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoOne.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked22(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoTwo.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoTwo.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked23(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoThree.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoThree.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked24(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoFour.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoFour.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked25(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoFive.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoFive.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked26(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoSix.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoSix.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked27(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoSeven.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoSeven.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked28(MouseEvent event) {
 		clickNum++;
 		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
+			piece=twoEight.getText();
 			System.out.println(piece);
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			twoEight.setText(piece);
 		}
 	}
 	@FXML protected void handleClicked30(MouseEvent event) {
