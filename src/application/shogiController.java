@@ -7,911 +7,2560 @@ import javafx.scene.input.MouseEvent;
 
 public class shogiController {
 	//　0行目
-	@FXML private TextField zeroZero;
-	@FXML private TextField zeroOne;
-	@FXML private TextField zeroTwo;
-	@FXML private TextField zeroThree;
-	@FXML private TextField zeroFour;
-	@FXML private TextField zeroFive;
-	@FXML private TextField zeroSix;
-	@FXML private TextField zeroSeven;
-	@FXML private TextField zeroEight;
+	@FXML protected TextField zeroZero;
+	@FXML protected TextField zeroOne;
+	@FXML protected TextField zeroTwo;
+	@FXML protected TextField zeroThree;
+	@FXML protected TextField zeroFour;
+	@FXML protected TextField zeroFive;
+	@FXML protected TextField zeroSix;
+	@FXML protected TextField zeroSeven;
+	@FXML protected TextField zeroEight;
 	// 1行目
-	@FXML private TextField oneZero;
-	@FXML private TextField oneOne;
-	@FXML private TextField oneTwo;
-	@FXML private TextField oneThree;
-	@FXML private TextField oneFour;
-	@FXML private TextField oneFive;
-	@FXML private TextField oneSix;
-	@FXML private TextField oneSeven;
-	@FXML private TextField oneEight;
+	@FXML protected TextField oneZero;
+	@FXML protected TextField oneOne;
+	@FXML protected TextField oneTwo;
+	@FXML protected TextField oneThree;
+	@FXML protected TextField oneFour;
+	@FXML protected TextField oneFive;
+	@FXML protected TextField oneSix;
+	@FXML protected TextField oneSeven;
+	@FXML protected TextField oneEight;
 	// 2行目
-	@FXML private TextField twoZero;
-	@FXML private TextField twoOne;
-	@FXML private TextField twoTwo;
-	@FXML private TextField twoThree;
-	@FXML private TextField twoFour;
-	@FXML private TextField twoFive;
-	@FXML private TextField twoSix;
-	@FXML private TextField twoSeven;
-	@FXML private TextField twoEight;
+	@FXML protected TextField twoZero;
+	@FXML protected TextField twoOne;
+	@FXML protected TextField twoTwo;
+	@FXML protected TextField twoThree;
+	@FXML protected TextField twoFour;
+	@FXML protected TextField twoFive;
+	@FXML protected TextField twoSix;
+	@FXML protected TextField twoSeven;
+	@FXML protected TextField twoEight;
 	// 3行目
-	@FXML private TextField threeZero;
-	@FXML private TextField threeOne;
-	@FXML private TextField threeTwo;
-	@FXML private TextField threeThree;
-	@FXML private TextField threeFour;
-	@FXML private TextField threeFive;
-	@FXML private TextField threeSix;
-	@FXML private TextField threeSeven;
-	@FXML private TextField threeEight;
+	@FXML protected TextField threeZero;
+	@FXML protected TextField threeOne;
+	@FXML protected TextField threeTwo;
+	@FXML protected TextField threeThree;
+	@FXML protected TextField threeFour;
+	@FXML protected TextField threeFive;
+	@FXML protected TextField threeSix;
+	@FXML protected TextField threeSeven;
+	@FXML protected TextField threeEight;
 	// 4行目
-	@FXML private TextField fourZero;
-	@FXML private TextField fourOne;
-	@FXML private TextField fourTwo;
-	@FXML private TextField fourThree;
-	@FXML private TextField fourFour;
-	@FXML private TextField fourFive;
-	@FXML private TextField fourSix;
-	@FXML private TextField fourSeven;
-	@FXML private TextField fourEight;
+	@FXML protected TextField fourZero;
+	@FXML protected TextField fourOne;
+	@FXML protected TextField fourTwo;
+	@FXML protected TextField fourThree;
+	@FXML protected TextField fourFour;
+	@FXML protected TextField fourFive;
+	@FXML protected TextField fourSix;
+	@FXML protected TextField fourSeven;
+	@FXML protected TextField fourEight;
 	// 5行目
-	@FXML private TextField fiveZero;
-	@FXML private TextField fiveOne;
-	@FXML private TextField fiveTwo;
-	@FXML private TextField fiveThree;
-	@FXML private TextField fiveFour;
-	@FXML private TextField fiveFive;
-	@FXML private TextField fiveSix;
-	@FXML private TextField fiveSeven;
-	@FXML private TextField fiveEight;
+	@FXML protected TextField fiveZero;
+	@FXML protected TextField fiveOne;
+	@FXML protected TextField fiveTwo;
+	@FXML protected TextField fiveThree;
+	@FXML protected TextField fiveFour;
+	@FXML protected TextField fiveFive;
+	@FXML protected TextField fiveSix;
+	@FXML protected TextField fiveSeven;
+	@FXML protected TextField fiveEight;
 	// 6行目
-	@FXML private TextField sixZero;
-	@FXML private TextField sixOne;
-	@FXML private TextField sixTwo;
-	@FXML private TextField sixThree;
-	@FXML private TextField sixFour;
-	@FXML private TextField sixFive;
-	@FXML private TextField sixSix;
-	@FXML private TextField sixSeven;
-	@FXML private TextField sixEight;
+	@FXML protected TextField sixZero;
+	@FXML protected TextField sixOne;
+	@FXML protected TextField sixTwo;
+	@FXML protected TextField sixThree;
+	@FXML protected TextField sixFour;
+	@FXML protected TextField sixFive;
+	@FXML protected TextField sixSix;
+	@FXML protected TextField sixSeven;
+	@FXML protected TextField sixEight;
 	// 7行目
-	@FXML private TextField sevenZero;
-	@FXML private TextField sevenOne;
-	@FXML private TextField sevenTwo;
-	@FXML private TextField sevenThree;
-	@FXML private TextField sevenFour;
-	@FXML private TextField sevenFive;
-	@FXML private TextField sevenSix;
-	@FXML private TextField sevenSeven;
-	@FXML private TextField sevenEight;
+	@FXML protected TextField sevenZero;
+	@FXML protected TextField sevenOne;
+	@FXML protected TextField sevenTwo;
+	@FXML protected TextField sevenThree;
+	@FXML protected TextField sevenFour;
+	@FXML protected TextField sevenFive;
+	@FXML protected TextField sevenSix;
+	@FXML protected TextField sevenSeven;
+	@FXML protected TextField sevenEight;
 	// 8行目
-	@FXML private TextField eightZero;
-	@FXML private TextField eightOne;
-	@FXML private TextField eightTwo;
-	@FXML private TextField eightThree;
-	@FXML private TextField eightFour;
-	@FXML private TextField eightFive;
-	@FXML private TextField eightSix;
-	@FXML private TextField eightSeven;
-	@FXML private TextField eightEight;
+	@FXML protected TextField eightZero;
+	@FXML protected TextField eightOne;
+	@FXML protected TextField eightTwo;
+	@FXML protected TextField eightThree;
+	@FXML protected TextField eightFour;
+	@FXML protected TextField eightFive;
+	@FXML protected TextField eightSix;
+	@FXML protected TextField eightSeven;
+	@FXML protected TextField eightEight;
 	
+	@FXML protected Button buttonConnect;
+	@FXML protected Label selectedPiece;
+	@FXML protected Label enemy0;
+	@FXML protected Label enemy1;
+	@FXML protected Label enemy2;
+	@FXML protected Label enemy3;
+	@FXML protected Label enemy4;
+	@FXML protected Label enemy5;
+	@FXML protected Label enemy6;
+	@FXML protected Label enemy7;
+	@FXML protected Label my0;
+	@FXML protected Label my1;
+	@FXML protected Label my2;
+	@FXML protected Label my3;
+	@FXML protected Label my4;
+	@FXML protected Label my5;
+	@FXML protected Label my6;
+	@FXML protected Label my7;
 	//getPromptText setPromptText  相手の駒をいじる方法
 	
-	
+//=================================================================================================	
 	@FXML protected void handleClicked00(MouseEvent event) {
-		boardSearch();
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroZero.getText();
+				zeroZero.setText("");
+				selectedPiece.setText(piece);
+				board[0][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroZero.getPromptText());
+					zeroZero.setPromptText("");
+				}
+				zeroZero.setText(piece);
+				selectedPiece.setText("");
+				board[0][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked01(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroOne.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroOne.getText();
+				zeroOne.setText("");
+				selectedPiece.setText(piece);
+				board[0][1]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroOne.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroOne.getPromptText());
+					zeroOne.setPromptText("");
+				}
+				zeroOne.setText(piece);
+				selectedPiece.setText("");
+				board[0][1]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked02(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroTwo.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroTwo.getText();
+				zeroTwo.setText("");
+				selectedPiece.setText(piece);
+				board[0][2]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroTwo.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroTwo.getPromptText());
+					zeroTwo.setPromptText("");
+				}
+				zeroTwo.setText(piece);
+				selectedPiece.setText("");
+				board[0][2]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked03(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroThree.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroThree.getText();
+				zeroThree.setText("");
+				selectedPiece.setText(piece);
+				board[0][3]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroThree.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroThree.getPromptText());
+					zeroThree.setPromptText("");
+				}
+				zeroThree.setText(piece);
+				selectedPiece.setText("");
+				board[0][3]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked04(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroFour.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroFour.getText();
+				zeroFour.setText("");
+				selectedPiece.setText(piece);
+				board[0][4]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroFour.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroFour.getPromptText());
+					zeroFour.setPromptText("");
+				}
+				zeroFour.setText(piece);
+				selectedPiece.setText("");
+				board[0][4]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked05(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroFive.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroFive.getText();
+				zeroFive.setText("");
+				selectedPiece.setText(piece);
+				board[0][5]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroFive.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroFive.getPromptText());
+					zeroFive.setPromptText("");
+				}
+				zeroFive.setText(piece);
+				selectedPiece.setText("");
+				board[0][5]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked06(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroSix.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroSix.getText();
+				zeroSix.setText("");
+				selectedPiece.setText(piece);
+				board[0][6]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroSix.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroSix.getPromptText());
+					zeroSix.setPromptText("");
+				}
+				zeroSix.setText(piece);
+				selectedPiece.setText("");
+				board[0][6]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked07(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroSeven.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroSeven.getText();
+				zeroSeven.setText("");
+				selectedPiece.setText(piece);
+				board[0][7]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroSeven.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroSeven.getPromptText());
+					zeroSeven.setPromptText("");
+				}
+				zeroSeven.setText(piece);
+				selectedPiece.setText("");
+				board[0][7]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked08(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroEight.getText();
-			System.out.println(piece);
+		int x=0;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=zeroEight.getText();
+				zeroEight.setText("");
+				selectedPiece.setText(piece);
+				board[0][8]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroEight.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(zeroEight.getPromptText());
+					zeroEight.setPromptText("");
+				}
+				zeroEight.setText(piece);
+				selectedPiece.setText("");
+				board[0][8]=1;
+				clickNum=0;
+			}
 		}
 	}
+//---------------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked10(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneZero.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneZero.getText();
+				oneZero.setText("");
+				selectedPiece.setText(piece);
+				board[1][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneZero.getPromptText());
+					oneZero.setPromptText("");
+				}
+				oneZero.setText(piece);
+				selectedPiece.setText("");
+				board[1][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked11(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneOne.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneOne.getText();
+				oneOne.setText("");
+				selectedPiece.setText(piece);
+				board[1][1]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneOne.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneOne.getPromptText());
+					oneOne.setPromptText("");
+				}
+				oneOne.setText(piece);
+				selectedPiece.setText("");
+				board[1][1]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked12(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneTwo.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneTwo.getText();
+				oneTwo.setText("");
+				selectedPiece.setText(piece);
+				board[1][2]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneTwo.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneTwo.getPromptText());
+					oneTwo.setPromptText("");
+				}
+				oneTwo.setText(piece);
+				selectedPiece.setText("");
+				board[1][2]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked13(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneThree.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneThree.getText();
+				oneThree.setText("");
+				selectedPiece.setText(piece);
+				board[1][3]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneThree.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneThree.getPromptText());
+					oneThree.setPromptText("");
+				}
+				oneThree.setText(piece);
+				selectedPiece.setText("");
+				board[1][3]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked14(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneFour.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneFour.getText();
+				oneFour.setText("");
+				selectedPiece.setText(piece);
+				board[1][4]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneFour.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneFour.getPromptText());
+					oneFour.setPromptText("");
+				}
+				oneFour.setText(piece);
+				selectedPiece.setText("");
+				board[1][4]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked15(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneFive.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFive.getText();
+				sevenFive.setText("");
+				selectedPiece.setText(piece);
+				board[1][5]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneFive.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFive.getPromptText());
+					oneFive.setPromptText("");
+				}
+				sevenFive.setText(piece);
+				selectedPiece.setText("");
+				board[1][5]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked16(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneSix.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneSix.getText();
+				oneSix.setText("");
+				selectedPiece.setText(piece);
+				board[1][6]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneSix.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneSix.getPromptText());
+					oneSix.setPromptText("");
+				}
+				oneSix.setText(piece);
+				selectedPiece.setText("");
+				board[1][6]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked17(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneSeven.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneSeven.getText();
+				oneSeven.setText("");
+				selectedPiece.setText(piece);
+				board[1][7]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneSeven.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneSeven.getPromptText());
+					oneSeven.setPromptText("");
+				}
+				oneSeven.setText(piece);
+				selectedPiece.setText("");
+				board[1][7]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked18(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=oneEight.getText();
-			System.out.println(piece);
+		int x=1;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=oneEight.getText();
+				oneEight.setText("");
+				selectedPiece.setText(piece);
+				board[1][8]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			oneEight.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(oneEight.getPromptText());
+					oneEight.setPromptText("");
+				}
+				oneEight.setText(piece);
+				selectedPiece.setText("");
+				board[1][8]=1;
+				clickNum=0;
+			}
 		}
 	}
+//-------------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked20(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoZero.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoZero.getText();
+				twoZero.setText("");
+				selectedPiece.setText(piece);
+				board[2][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoZero.getPromptText());
+					twoZero.setPromptText("");
+				}
+				twoZero.setText(piece);
+				selectedPiece.setText("");
+				board[2][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked21(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoOne.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoOne.getText();
+				twoOne.setText("");
+				selectedPiece.setText(piece);
+				board[2][1]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoOne.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoOne.getPromptText());
+					twoOne.setPromptText("");
+				}
+				twoOne.setText(piece);
+				selectedPiece.setText("");
+				board[2][1]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked22(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoTwo.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoTwo.getText();
+				twoTwo.setText("");
+				selectedPiece.setText(piece);
+				board[2][2]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoTwo.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoTwo.getPromptText());
+					twoTwo.setPromptText("");
+				}
+				twoTwo.setText(piece);
+				selectedPiece.setText("");
+				board[2][2]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked23(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoThree.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoThree.getText();
+				twoThree.setText("");
+				selectedPiece.setText(piece);
+				board[2][3]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoThree.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoThree.getPromptText());
+					twoThree.setPromptText("");
+				}
+				twoThree.setText(piece);
+				selectedPiece.setText("");
+				board[2][3]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked24(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoFour.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoFour.getText();
+				twoFour.setText("");
+				selectedPiece.setText(piece);
+				board[2][4]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoFour.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoFour.getPromptText());
+					twoFour.setPromptText("");
+				}
+				twoFour.setText(piece);
+				selectedPiece.setText("");
+				board[2][4]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked25(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoFive.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoFive.getText();
+				twoFive.setText("");
+				selectedPiece.setText(piece);
+				board[2][5]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoFive.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoFive.getPromptText());
+					twoFive.setPromptText("");
+				}
+				twoFive.setText(piece);
+				selectedPiece.setText("");
+				board[2][5]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked26(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoSix.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoSix.getText();
+				twoSix.setText("");
+				selectedPiece.setText(piece);
+				board[2][6]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoSix.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoSix.getPromptText());
+					twoSix.setPromptText("");
+				}
+				twoSix.setText(piece);
+				selectedPiece.setText("");
+				board[2][6]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked27(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoSeven.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoSeven.getText();
+				twoSeven.setText("");
+				selectedPiece.setText(piece);
+				board[2][7]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoSeven.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoSeven.getPromptText());
+					twoSeven.setPromptText("");
+				}
+				twoSeven.setText(piece);
+				selectedPiece.setText("");
+				board[2][7]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked28(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=twoEight.getText();
-			System.out.println(piece);
+		int x=2;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=twoEight.getText();
+				twoEight.setText("");
+				selectedPiece.setText(piece);
+				board[2][8]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			twoEight.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(twoEight.getPromptText());
+					twoEight.setPromptText("");
+				}
+				twoEight.setText(piece);
+				selectedPiece.setText("");
+				board[2][8]=1;
+				clickNum=0;
+			}
 		}
 	}
+//--------------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked30(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeZero.getText();
-			System.out.println(piece);
+		int x=3;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=threeZero.getText();
+				threeZero.setText("");
+				selectedPiece.setText(piece);
+				board[3][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(threeZero.getPromptText());
+					threeZero.setPromptText("");
+				}
+				threeZero.setText(piece);
+				selectedPiece.setText("");
+				board[3][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked31(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeOne.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenOne.getText();
+				sevenOne.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeOne.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenOne.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenOne.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked32(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeTwo.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenTwo.getText();
+				sevenTwo.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeTwo.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenTwo.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenTwo.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked33(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeThree.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenThree.getText();
+				sevenThree.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeThree.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenThree.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenThree.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked34(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeFour.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFour.getText();
+				sevenFour.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeFour.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFour.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFour.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked35(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeFive.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFive.getText();
+				sevenFive.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeFive.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFive.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFive.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked36(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeSix.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSix.getText();
+				sevenSix.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeSix.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSix.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSix.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked37(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeSeven.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSeven.getText();
+				sevenSeven.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeSeven.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSeven.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSeven.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked38(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=threeEight.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenEight.getText();
+				sevenEight.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			threeEight.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenEight.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenEight.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
+//----------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked40(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=4;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=fourZero.getText();
+				fourZero.setText("");
+				selectedPiece.setText(piece);
+				board[4][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(fourZero.getPromptText());
+					fourZero.setPromptText("");
+				}
+				fourZero.setText(piece);
+				selectedPiece.setText("");
+				board[4][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked41(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenOne.getText();
+				sevenOne.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenOne.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenOne.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked42(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenTwo.getText();
+				sevenTwo.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenTwo.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenTwo.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked43(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenThree.getText();
+				sevenThree.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenThree.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenThree.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked44(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFour.getText();
+				sevenFour.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFour.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFour.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked45(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFive.getText();
+				sevenFive.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFive.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFive.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked46(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSix.getText();
+				sevenSix.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSix.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSix.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked47(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSeven.getText();
+				sevenSeven.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSeven.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSeven.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked48(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenEight.getText();
+				sevenEight.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenEight.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenEight.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
+//----------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked50(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=5;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=fiveZero.getText();
+				fiveZero.setText("");
+				selectedPiece.setText(piece);
+				board[5][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(fiveZero.getPromptText());
+					fiveZero.setPromptText("");
+				}
+				fiveZero.setText(piece);
+				selectedPiece.setText("");
+				board[5][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked51(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenOne.getText();
+				sevenOne.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenOne.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenOne.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked52(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenTwo.getText();
+				sevenTwo.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenTwo.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenTwo.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked53(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenThree.getText();
+				sevenThree.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenThree.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenThree.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked54(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFour.getText();
+				sevenFour.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFour.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFour.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked55(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFive.getText();
+				sevenFive.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFive.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFive.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked56(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSix.getText();
+				sevenSix.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSix.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSix.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked57(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSeven.getText();
+				sevenSeven.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSeven.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSeven.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked58(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenEight.getText();
+				sevenEight.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenEight.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenEight.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
+//-----------------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked60(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=6;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sixZero.getText();
+				sixZero.setText("");
+				selectedPiece.setText(piece);
+				board[6][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sixZero.getPromptText());
+					sixZero.setPromptText("");
+				}
+				sixZero.setText(piece);
+				selectedPiece.setText("");
+				board[6][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked61(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenOne.getText();
+				sevenOne.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenOne.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenOne.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked62(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenTwo.getText();
+				sevenTwo.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenTwo.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenTwo.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked63(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenThree.getText();
+				sevenThree.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenThree.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenThree.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked64(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFour.getText();
+				sevenFour.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFour.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFour.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked65(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFive.getText();
+				sevenFive.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFive.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenFive.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked66(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSix.getText();
+				sevenSix.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSix.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSix.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked67(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSeven.getText();
+				sevenSeven.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSeven.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenSeven.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked68(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenEight.getText();
+				sevenEight.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenEight.getPromptText());
+					eightZero.setPromptText("");
+				}
+				sevenEight.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
+//-----------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked70(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenZero.getText();
+				sevenZero.setText("");
+				selectedPiece.setText(piece);
+				board[7][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenZero.getPromptText());
+					sevenZero.setPromptText("");
+				}
+				sevenZero.setText(piece);
+				selectedPiece.setText("");
+				board[7][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked71(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenOne.getText();
+				sevenOne.setText("");
+				selectedPiece.setText(piece);
+				board[7][1]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenOne.getPromptText());
+					sevenOne.setPromptText("");
+				}
+				sevenOne.setText(piece);
+				selectedPiece.setText("");
+				board[7][1]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked72(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenTwo.getText();
+				sevenTwo.setText("");
+				selectedPiece.setText(piece);
+				board[7][2]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenTwo.getPromptText());
+					sevenTwo.setPromptText("");
+				}
+				sevenTwo.setText(piece);
+				selectedPiece.setText("");
+				board[7][2]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked73(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenThree.getText();
+				sevenThree.setText("");
+				selectedPiece.setText(piece);
+				board[7][3]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenThree.getPromptText());
+					sevenThree.setPromptText("");
+				}
+				sevenThree.setText(piece);
+				selectedPiece.setText("");
+				board[7][3]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked74(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFour.getText();
+				sevenFour.setText("");
+				selectedPiece.setText(piece);
+				board[7][4]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFour.getPromptText());
+					sevenFour.setPromptText("");
+				}
+				sevenFour.setText(piece);
+				selectedPiece.setText("");
+				board[7][4]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked75(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenFive.getText();
+				sevenFive.setText("");
+				selectedPiece.setText(piece);
+				board[7][5]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenFive.getPromptText());
+					sevenFive.setPromptText("");
+				}
+				sevenFive.setText(piece);
+				selectedPiece.setText("");
+				board[7][5]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked76(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSix.getText();
+				sevenSix.setText("");
+				selectedPiece.setText(piece);
+				board[7][6]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSix.getPromptText());
+					sevenSix.setPromptText("");
+				}
+				sevenSix.setText(piece);
+				selectedPiece.setText("");
+				board[7][6]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked77(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenSeven.getText();
+				sevenSeven.setText("");
+				selectedPiece.setText(piece);
+				board[7][7]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenSeven.getPromptText());
+					sevenSeven.setPromptText("");
+				}
+				sevenSeven.setText(piece);
+				selectedPiece.setText("");
+				board[7][7]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked78(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=7;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=sevenEight.getText();
+				sevenEight.setText("");
+				selectedPiece.setText(piece);
+				board[7][8]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(sevenEight.getPromptText());
+					sevenEight.setPromptText("");
+				}
+				sevenEight.setText(piece);
+				selectedPiece.setText("");
+				board[7][8]=1;
+				clickNum=0;
+			}
 		}
 	}
+//-----------------------------------------------------------------------------------------------
 	@FXML protected void handleClicked80(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=0;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightZero.getText();
+				eightZero.setText("");
+				selectedPiece.setText(piece);
+				board[8][0]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightZero.getPromptText());
+					eightZero.setPromptText("");
+				}
+				eightZero.setText(piece);
+				selectedPiece.setText("");
+				board[8][0]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked81(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=1;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightOne.getText();
+				eightOne.setText("");
+				selectedPiece.setText(piece);
+				board[8][1]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightOne.getPromptText());
+					eightOne.setPromptText("");
+				}
+				eightOne.setText(piece);
+				selectedPiece.setText("");
+				board[8][1]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked82(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=2;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightTwo.getText();
+				eightTwo.setText("");
+				selectedPiece.setText(piece);
+				board[8][2]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightTwo.getPromptText());
+					eightTwo.setPromptText("");
+				}
+				eightTwo.setText(piece);
+				selectedPiece.setText("");
+				board[8][2]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked83(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=3;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightThree.getText();
+				eightThree.setText("");
+				selectedPiece.setText(piece);
+				board[8][3]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightThree.getPromptText());
+					eightThree.setPromptText("");
+				}
+				eightThree.setText(piece);
+				selectedPiece.setText("");
+				board[8][3]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked84(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=4;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightFour.getText();
+				eightFour.setText("");
+				selectedPiece.setText(piece);
+				board[8][4]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightFour.getPromptText());
+					eightFour.setPromptText("");
+				}
+				eightFour.setText(piece);
+				selectedPiece.setText("");
+				board[8][4]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked85(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=5;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightFive.getText();
+				eightFive.setText("");
+				selectedPiece.setText(piece);
+				board[8][5]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightFive.getPromptText());
+					eightFive.setPromptText("");
+				}
+				eightFive.setText(piece);
+				selectedPiece.setText("");
+				board[8][5]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked86(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=6;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightSix.getText();
+				eightSix.setText("");
+				selectedPiece.setText(piece);
+				board[8][6]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightSix.getPromptText());
+					eightSix.setPromptText("");
+				}
+				eightSix.setText(piece);
+				selectedPiece.setText("");
+				board[8][6]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked87(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=7;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightSeven.getText();
+				eightSeven.setText("");
+				selectedPiece.setText(piece);
+				board[8][7]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightSeven.getPromptText());
+					eightSeven.setPromptText("");
+				}
+				eightSeven.setText(piece);
+				selectedPiece.setText("");
+				board[8][7]=1;
+				clickNum=0;
+			}
 		}
 	}
 	@FXML protected void handleClicked88(MouseEvent event) {
-		clickNum++;
-		if(clickNum%2==0) { //駒をつかむ (get)
-			piece=zeroZero.getText();
-			System.out.println(piece);
+		int x=8;
+		int y=8;
+		if(clickNum==0) { //駒をつかむ (get)
+			pick[0]=x;
+			pick[1]=y;
+			if(board[x][y]==1) {
+				piece=eightEight.getText();
+				eightEight.setText("");
+				selectedPiece.setText(piece);
+				board[8][8]=0;
+				clickNum=1;
+				canBePlaceSearch();
+			}
 		}
 		else {              //駒を置く (set)
-			zeroZero.setText(piece);
+			put[0]=x;
+			put[1]=y;
+			if(canBePlace[x][y]==1) {
+				if(board[x][y]==2) {
+					countPiece(eightEight.getPromptText());
+					eightEight.setPromptText("");
+				}
+				eightEight.setText(piece);
+				selectedPiece.setText("");
+				board[8][8]=1;
+				clickNum=0;
+			}
 		}
 	}
 	
+//==========================================================================================
+	@FXML protected void handleButtonConnect() {
+		boardSearch();
+	}
 //===========================================================================================
 	/*盤面の状態を探索　0:駒無し　1：自分の駒あり　2：相手の駒あり*/
 	public void boardSearch() {
@@ -924,22 +2573,22 @@ public class shogiController {
 		
 		if(!(zeroZero.getText().equals(""))){ board[0][0]=1; }
 		else{ if(!(zeroZero.getPromptText().equals(""))) { board[0][0]=2; } }
-		if(!(zeroOne.getText().equals(""))){ board[0][1]=1; }
-		else{ if(!(zeroOne.getPromptText().equals(""))) { board[0][1]=2; } }
-		if(!(zeroTwo.getText().equals(""))){ board[0][2]=1; }
-		else{ if(!(zeroTwo.getPromptText().equals(""))) { board[0][2]=2; } }
-		if(!(zeroThree.getText().equals(""))){ board[0][3]=1; }
-		else{ if(!(zeroThree.getPromptText().equals(""))) { board[0][3]=2; } }
-		if(!(zeroFour.getText().equals(""))){ board[0][4]=1; }
-		else{ if(!(zeroFour.getPromptText().equals(""))) { board[0][4]=2; } }
-		if(!(zeroFive.getText().equals(""))){ board[0][5]=1; }
-		else{ if(!(zeroFive.getPromptText().equals(""))) { board[0][5]=2; } }
-		if(!(zeroSix.getText().equals(""))){ board[0][6]=1; }
-		else{ if(!(zeroSix.getPromptText().equals(""))) { board[0][6]=2; } }
-		if(!(zeroSeven.getText().equals(""))){ board[0][7]=1; }
-		else{ if(!(zeroSeven.getPromptText().equals(""))) { board[0][7]=2; } }
-		if(!(zeroEight.getText().equals(""))){ board[0][8]=1; }
-		else{ if(!(zeroEight.getPromptText().equals(""))) { board[0][8]=2; } }
+		if(!(this.zeroOne.getText().equals(""))){ board[0][1]=1; }
+		else{ if(!(this.zeroOne.getPromptText().equals(""))) { board[0][1]=2; } }
+		if(!(this.zeroTwo.getText().equals(""))){ board[0][2]=1; }
+		else{ if(!(this.zeroTwo.getPromptText().equals(""))) { board[0][2]=2; } }
+		if(!(this.zeroThree.getText().equals(""))){ board[0][3]=1; }
+		else{ if(!(this.zeroThree.getPromptText().equals(""))) { board[0][3]=2; } }
+		if(!(this.zeroFour.getText().equals(""))){ board[0][4]=1; }
+		else{ if(!(this.zeroFour.getPromptText().equals(""))) { board[0][4]=2; } }
+		if(!(this.zeroFive.getText().equals(""))){ board[0][5]=1; }
+		else{ if(!(this.zeroFive.getPromptText().equals(""))) { board[0][5]=2; } }
+		if(!(this.zeroSix.getText().equals(""))){ board[0][6]=1; }
+		else{ if(!(this.zeroSix.getPromptText().equals(""))) { board[0][6]=2; } }
+		if(!(this.zeroSeven.getText().equals(""))){ board[0][7]=1; }
+		else{ if(!(this.zeroSeven.getPromptText().equals(""))) { board[0][7]=2; } }
+		if(!(this.zeroEight.getText().equals(""))){ board[0][8]=1; }
+		else{ if(!(this.zeroEight.getPromptText().equals(""))) { board[0][8]=2; } }
 		
 		if(!(oneZero.getText().equals(""))){ board[1][0]=1; }
 		else{ if(!(oneZero.getPromptText().equals(""))) { board[1][0]=2; } }
@@ -1420,8 +3069,53 @@ public class shogiController {
 			break;
 		}
 	}
-	
-	
+//==============================================================================================
+	/*敵コマを倒したときに持ち駒を更新*/
+	public void countPiece(String pieceName) {
+		switch(pieceName) {
+		case "歩":
+		case "と":
+			havePiece[0][0]+=1;
+			my0.setText(Integer.valueOf(havePiece[0][0]).toString());
+			break;
+		case "角":
+		case "龍馬":
+			havePiece[0][1]+=1;
+			my1.setText(Integer.valueOf(havePiece[0][1]).toString());
+			break;
+		case "飛":
+		case "龍王":
+			havePiece[0][2]+=1;
+			my2.setText(Integer.valueOf(havePiece[0][2]).toString());
+			break;
+		case "香":
+		case "成香":
+			havePiece[0][3]+=1;
+			my3.setText(Integer.valueOf(havePiece[0][3]).toString());
+			break;
+		case "桂":
+		case "成桂":
+			havePiece[0][4]+=1;
+			my4.setText(Integer.valueOf(havePiece[0][4]).toString());
+			break;
+		case "銀":
+		case "成銀":
+			havePiece[0][5]+=1;
+			my5.setText(Integer.valueOf(havePiece[0][5]).toString());
+			break;
+		case "金":
+			havePiece[0][6]+=1;
+			my6.setText(Integer.valueOf(havePiece[0][6]).toString());
+			break;
+		case "王":
+		case "玉":
+			havePiece[0][7]+=1;
+			my7.setText(Integer.valueOf(havePiece[0][7]).toString());
+			break;
+		default:
+			break;
+		}
+	}
 //=============================================================================================	
 	int clickNum=0; //クリック回数 (%2 = {0:掴む,1:置く})
 	String piece=""; //掴んでいる駒
@@ -1430,5 +3124,6 @@ public class shogiController {
 	int[] put=new int[2];         //置く場所[x,y]
 	
 	int[][] board=new int[9][9];  //盤面　駒がない：0  自駒：1  敵駒：2
+	int[][] havePiece= {{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0}};  //持ち駒　[0][]:自分の駒  [1][]:相手の駒
 	
 }
